@@ -23,6 +23,7 @@ Route::get('/', HomeComponent::class)->name('home');
 Route::get('shop',ShopComponent::class);
 Route::get('cart',CartComponent::class);
 Route::get('checkout',CheckoutComponent::class);
+Route::get('product/{slug}',DetailComponent::class)->name('product.details');
 
 // Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 //     return view('dashboard');
